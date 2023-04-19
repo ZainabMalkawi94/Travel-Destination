@@ -1,0 +1,44 @@
+.footerDiv{
+    background: #eee;
+
+}
+
+div p {
+    text-align: center;
+    font-weight: bold;
+    size: 15px;
+}
+
+.social-container {
+  
+    padding: 2px;
+    display: block;
+    align-content: center;
+  }
+  a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+    position: relative;
+     left: 42%;
+     transform: translateX(-50%);
+    
+  }
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  a.youtube {
+    color: #eb3223;
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.twitter {
+    color: #49a1eb;
+  }
+  
+  a.instagram {
+    color: black;
+  }
