@@ -1,14 +1,22 @@
 import './Tours.css'
-import './tour/Tour.js'
+import Tour from "./tour/Tour.js";
 
-function Tours(props) {
+
+import React from "react";
+
+function Tours (props){
     return (
         <>
-            <Tour />
+            <h2>Tours list</h2>
+            {
+                props.arrayData.map((item, i) => {
+                    return (
+                        <Tour tour = {item}/>
+                    )
+                })
+            }
         </>
     )
 
-
 }
-
-export default Tours;d
+  export default Tours;

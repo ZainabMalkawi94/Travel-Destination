@@ -1,29 +1,19 @@
+import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 function Tour(props) {
-    const [takenToys, setTakenToys] = useState(0);
-
-    const incrementTakenToys = () => {
-        setTakenToys(takenToys + 1);
-        if (takenToys < 5) {
-            props.decrementFun(false);
-        } else if (takenToys >= 5) {
-            props.decrementFun(true);
-        }
-    }
+    console.log(props);
     return (
         <>
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={props.image} />
+            
+                <Link to={`/city/${props.tour.id}`}><Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={props.tour.image} />
                 <Card.Body>
-                    <Card.Title>{props.name}</Card.Title>
-                    <Card.Text>
-                        <p>{props.age}</p>
-                        <p>Number of Taken Toys: {takenToys}</p>
-                    </Card.Text>
-                    <Button onClick={incrementTakenToys} variant="primary">I need a Toy!</Button>
+                    <Card.Title>{props.tour.name}</Card.Title>
+                    <p>{props.tour.price} </p>
                 </Card.Body>
-            </Card>
+                </Card></Link>
+            
         </>
     )
 }
-
 export default Tour;
