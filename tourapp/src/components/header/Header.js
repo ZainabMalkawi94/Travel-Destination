@@ -3,9 +3,10 @@ import Navbar from '../Navbar/Navbar';
 function Header(props) {
     return (
         <>
-        
-         <h1> Tours App</h1>
-         <Navbar/>
+            <div className='title'>
+                <h1> Tours App</h1>
+                <Navbar />
+            </div>
         </>
     )
 }

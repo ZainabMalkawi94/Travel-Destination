@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
+import TourDetails from '../../TourDetails/TourDetails';
 import { Link } from 'react-router-dom';
 function Tour(props) {
-    console.log(props);
     return (
         <>
             
