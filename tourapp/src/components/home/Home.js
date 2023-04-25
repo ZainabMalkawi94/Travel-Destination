@@ -11,6 +11,7 @@ function Home() {
             <Header />
             <Tours arrayData={data} />
             <Footer />
+
         </>
 
     )

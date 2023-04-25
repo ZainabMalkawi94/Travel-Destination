@@ -1,0 +1,16 @@
+nav{
+    display: inline;
+    list-style-type: none;
+
+  margin: 0;
+  padding: 0;
+background-color: beige;
+}
+nav Link{
+    display: inline;
+   text-decoration:inherit ;
+    
+  margin-right: 0;
+  padding: 0;
+
+}

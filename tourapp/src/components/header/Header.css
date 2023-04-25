@@ -3,4 +3,15 @@ h1{
     text-align: center;
     margin-top: 0px;
     background-color: #eee;
+    display: inline-block;
+    margin-right: 83%;
 }
+
+.title {
+background-color: #eee;
+flex-flow:column-reverse wrap-reverse;
+    justify-content:center;
+    align-content:space-between;
+
+}
+
